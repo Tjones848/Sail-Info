@@ -75,7 +75,7 @@
     <!-- SOG -->
     <div class="field">
       <div class="label" id="SOG-label">SOG</div>
-      <div class="value" id="SOG">0 kn</div>
+      <div class="value" id="SOG">-.-- kn</div>
     </div>
 
     <div class="divider"></div>
@@ -83,7 +83,7 @@
     <!-- HDG -->
     <div class="field">
       <div class="label" id="HDG-label">HDG</div>
-      <div class="value" id="HDG">0°</div>
+      <div class="value" id="HDG">---°</div>
     </div>
 
     <div class="divider"></div>
@@ -121,7 +121,7 @@
       }
 
       if (heading !== null && !isNaN(heading)) {
-        document.getElementById('HDG').textContent = `${heading.toFixed(2)}°`;
+        document.getElementById('HDG').textContent = `${heading.toFixed(0)}°`;
       } else {
         document.getElementById('HDG').textContent = `---°`;
       }
